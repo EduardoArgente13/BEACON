@@ -31,6 +31,7 @@ public class SandboxTemplateManager : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Material platformMaterial;
+    [SerializeField] private Sprite platformSprite;
 
     [Header("Layout")]
     [SerializeField] private Vector2 easyOrigin = new Vector2(0, 0);
@@ -150,6 +151,15 @@ public class SandboxTemplateManager : MonoBehaviour
         sr.color = tint;
         sr.drawMode = SpriteDrawMode.Sliced;
         sr.size = spec.size;
+        // Ensure a visible sprite; fallback to white texture if none provided.
+        if (platformSprite != null)
+        {
+            sr.sprite = platformSprite;
+        }
+        else
+        {
+            sr.sprite = Sprite.Create(Texture2D.whiteTexture, new Rect(0, 0, Texture2D.whiteTexture.width, Texture2D.whiteTexture.height), new Vector2(0.5f, 0.5f), 100f);
+        }
         if (platformMaterial != null) sr.material = platformMaterial;
 
         var bc = go.AddComponent<BoxCollider2D>();
