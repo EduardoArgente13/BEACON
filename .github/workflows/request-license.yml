@@ -1,0 +1,16 @@
+name: Unity License Request
+
+on:
+  workflow_dispatch:
+
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Request activation file (.alf)
+        uses: game-ci/unity-request-activation@v4
+        with:
+          unityVersion: 2023.3.0f1
