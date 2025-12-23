@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using BEACON.Combat;
 using BEACON.Combat.Core;
 using BEACON.Core.Health;
@@ -71,19 +72,22 @@ public class SandboxController : MonoBehaviour
 
     private void HandleHotkeys()
     {
-        if (Input.GetKeyDown(KeyCode.F1)) showHUD = !showHUD;
-        if (Input.GetKeyDown(KeyCode.F2)) godMode = !godMode;
-        if (Input.GetKeyDown(KeyCode.F3)) infiniteResonance = !infiniteResonance;
-        if (Input.GetKeyDown(KeyCode.F4)) ToggleSlowMo();
-        if (Input.GetKeyDown(KeyCode.F5)) SpawnEnemyAtCursor();
-        if (Input.GetKeyDown(KeyCode.F6)) ClearEnemies();
-        if (Input.GetKeyDown(KeyCode.F7)) ToggleHitboxes();
-        if (Input.GetKeyDown(KeyCode.F8)) ResetPlayer();
+        var kb = Keyboard.current;
+        if (kb == null) return;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) EquipWeapon(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) EquipWeapon(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) EquipWeapon(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4)) EquipWeapon(3);
+        if (kb.f1Key.wasPressedThisFrame) showHUD = !showHUD;
+        if (kb.f2Key.wasPressedThisFrame) godMode = !godMode;
+        if (kb.f3Key.wasPressedThisFrame) infiniteResonance = !infiniteResonance;
+        if (kb.f4Key.wasPressedThisFrame) ToggleSlowMo();
+        if (kb.f5Key.wasPressedThisFrame) SpawnEnemyAtCursor();
+        if (kb.f6Key.wasPressedThisFrame) ClearEnemies();
+        if (kb.f7Key.wasPressedThisFrame) ToggleHitboxes();
+        if (kb.f8Key.wasPressedThisFrame) ResetPlayer();
+
+        if (kb.digit1Key.wasPressedThisFrame) EquipWeapon(0);
+        if (kb.digit2Key.wasPressedThisFrame) EquipWeapon(1);
+        if (kb.digit3Key.wasPressedThisFrame) EquipWeapon(2);
+        if (kb.digit4Key.wasPressedThisFrame) EquipWeapon(3);
     }
 
     private void ApplyCheats()
@@ -148,7 +152,15 @@ public class SandboxController : MonoBehaviour
     {
         if (enemyPrefab == null || Camera.main == null) return;
 
-        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mouseWorld;
+        if (Mouse.current != null)
+        {
+            mouseWorld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        }
+        else
+        {
+            mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
         mouseWorld.z = 0;
 
         SpawnEnemy(mouseWorld);
