@@ -10,7 +10,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Request activation file (.alf)
-        uses: game-ci/unity-request-activation@v4
+      - name: Generate activation file (.alf) via UnityCI docker
+        run: |
+          set -e
+          docker run --rm \
+            -v "$PWD:/workspace" \
+            -w /workspace \
+            unityci/editor:2023.3.0f1-base-1 \
+            unity-editor -batchmode -nographics -createManualActivationFile -logFile /workspace/activation.log -quit
+          echo "Generated files:"
+          ls -la
+          find . -maxdepth 2 -name "*.alf" -print
+
+      - name: Upload activation file
+        uses: actions/upload-artifact@v4
         with:
-          unityVersion: 2023.3.0f1
+          name: unity-activation-file
+          path: "*.alf"
