@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc419b69e7a0c94bb74840ef81cc869, type: 3}
+  m_Name: Mega_Plasma
+  m_EditorClassIdentifier: Assembly-CSharp::BEACON.Combat.Weapons.ComboData
+  comboName: Mega_Plasma
+  attacks:
+  - animationName: 
+    damage: 120
+    knockbackForce: 0
+    knockbackDirection: {x: 0, y: 0}
+    hitStopDuration: 0
+    activeFrameStart: 0
+    activeFrameEnd: 0
+    canCancelIntoDash: 0
+    canCancelIntoJump: 0
+    earliestCancelFrame: 0
+    hitboxShape: 0
+    hitboxOffset: {x: 0, y: 0}
+    hitboxSize: {x: 0, y: 0}
+    providesMovement: 0
+    movementVector: {x: 0, y: 0}
+    movementDuration: 0
+    attackType: 3
+    clashMultiplier: 0
+    resonanceGain: 0
+    resonanceCost: 50
+    projectilePrefab: {fileID: 41029959489276955, guid: f557613803737f648b665ef2a24dc9d5, type: 3}
+    projectileSpeed: 20
+    isCharged: 1
+    minChargeTime: 0.8
+    projectileCount: 0
+    spreadAngle: 0
+  timingWindows: []
+  allowDirectionalInput: 0
+  resetOnAir: 0

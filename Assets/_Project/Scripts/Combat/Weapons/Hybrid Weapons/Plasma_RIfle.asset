@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7737a70605563014f9df2f332df220a1, type: 3}
+  m_Name: Plasma_RIfle
+  m_EditorClassIdentifier: Assembly-CSharp::BEACON.Combat.HybridWeaponData
+  weaponName: 
+  archetype: 0
+  icon: {fileID: 0}
+  weaponPrefab: {fileID: 0}
+  primaryCombo: {fileID: 11400000, guid: 725356e682281f8478a36a2590fd6ac3, type: 2}
+  specialCombo: {fileID: 11400000, guid: 28cb8b19f36a3cf4d924b3b59afd9595, type: 2}
+  synergyDescription: Range + Super Ranged
+  hasSynergy: 0
+  resonanceTrailColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf11e1014e729e46bc65ecffc07613c, type: 3}
+  m_Name: TestSword
+  m_EditorClassIdentifier: Assembly-CSharp::BEACON.Combat.Weapons.WeaponBase
+  weaponName: 
+  weaponType: 0
+  icon: {fileID: 0}
+  weaponPrefab: {fileID: 0}
+  baseDamage: 10
+  attackSpeed: 1
+  groundCombo: {fileID: 11400000, guid: e5ee3df0ddfc0e44ca968357d78e5d31, type: 2}
+  airCombo: {fileID: 0}
+  resonanceGainMultiplier: 1
+  canParry: 1
+  parryWindow: 0.2

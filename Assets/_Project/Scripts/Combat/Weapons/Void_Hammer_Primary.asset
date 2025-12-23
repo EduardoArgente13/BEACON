@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc419b69e7a0c94bb74840ef81cc869, type: 3}
+  m_Name: Void_Hammer_Primary
+  m_EditorClassIdentifier: Assembly-CSharp::BEACON.Combat.Weapons.ComboData
+  comboName: Void_Hammer
+  attacks:
+  - animationName: Hammer_Swing1
+    damage: 35
+    knockbackForce: 10
+    knockbackDirection: {x: 0, y: 0}
+    hitStopDuration: 0.2
+    activeFrameStart: 10
+    activeFrameEnd: 20
+    canCancelIntoDash: 0
+    canCancelIntoJump: 0
+    earliestCancelFrame: 0
+    hitboxShape: 0
+    hitboxOffset: {x: 1, y: 0}
+    hitboxSize: {x: 3, y: 3}
+    providesMovement: 0
+    movementVector: {x: 0, y: 0}
+    movementDuration: 0
+    attackType: 0
+    clashMultiplier: 0
+    resonanceGain: 20
+    resonanceCost: 0
+    projectilePrefab: {fileID: 0}
+    projectileSpeed: 0
+    isCharged: 0
+    minChargeTime: 0
+  - animationName: Hammer_Swing2
+    damage: 55
+    knockbackForce: 10
+    knockbackDirection: {x: 0, y: 0}
+    hitStopDuration: 0.3
+    activeFrameStart: 15
+    activeFrameEnd: 28
+    canCancelIntoDash: 0
+    canCancelIntoJump: 0
+    earliestCancelFrame: 0
+    hitboxShape: 0
+    hitboxOffset: {x: 1, y: 0}
+    hitboxSize: {x: 4, y: 4}
+    providesMovement: 0
+    movementVector: {x: 0, y: 0}
+    movementDuration: 0
+    attackType: 0
+    clashMultiplier: 0
+    resonanceGain: 30
+    resonanceCost: 0
+    projectilePrefab: {fileID: 0}
+    projectileSpeed: 0
+    isCharged: 0
+    minChargeTime: 0
+  timingWindows: []
+  allowDirectionalInput: 0
+  resetOnAir: 0

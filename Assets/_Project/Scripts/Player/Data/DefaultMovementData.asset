@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30681f23e5af37479c21352d48bce93, type: 3}
+  m_Name: DefaultMovementData
+  m_EditorClassIdentifier: Assembly-CSharp::BEACON.Player.Data.PlayerMovementData
+  moveSpeed: 8
+  groundAcceleration: 50
+  groundDeceleration: 50
+  airAcceleration: 35
+  airDeceleration: 20
+  jumpForce: 18
+  jumpCutMultiplier: 0.5
+  fallGravityMultiplier: 1.8
+  maxFallSpeed: 25
+  apexThreshold: 2.5
+  apexSpeedBonus: 0.5
+  apexGravityReduction: 0.4
+  coyoteTime: 0.12
+  jumpBufferTime: 0.1
+  dashSpeed: 25
+  dashDuration: 0.15
+  dashCooldown: 0.4
+  dashIFramesDuration: 0.12
+  airDashesAllowed: 1
+  dashEndSpeedMultiplier: 0.5
+  wallSlideSpeed: 3
+  wallJumpForceX: 12
+  wallJumpForceY: 16
+  wallJumpLockTime: 0.2
+  groundCheckDistance: 0.1
+  groundCheckWidth: 0.4
+  maxSlopeAngle: 45
+  defaultGravityScale: 3
+  holdJumpGravityScale: 2
+  dashResonanceSpeedBonus: 0.2
+  dashResonanceIFramesBonus: 0.15
+  perfectDodgeWindow: 0.3
+  perfectDodgeSlowMoDuration: 0.2
+  perfectDodgeResonanceGain: 10

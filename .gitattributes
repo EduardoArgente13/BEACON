@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Unity binary formats
+*.unity binary
+*.prefab binary
+*.asset binary
+*.mat binary
+*.fbx binary
+*.anim binary
+*.controller binary
+*.shader binary
+*.png binary
+*.jpg binary
+*.psd binary
