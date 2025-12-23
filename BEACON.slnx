@@ -1,5 +1,0 @@
-﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="BEACON.EditModeTests.csproj" />
-  <Project Path="BEACON.PlayModeTests.csproj" />
-</Solution>

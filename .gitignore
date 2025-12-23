@@ -10,9 +10,13 @@
 /Assets/Plugins/Editor/JetBrains*
 
 # Visual Studio / Rider / VSCode
+# Visual Studio / Rider / VSCode
 .vs/
 .idea/
 *.sln.iml
+*.sln
+*.slnx
+*.csproj
 *.user
 *.userprefs
 *.csproj.user
