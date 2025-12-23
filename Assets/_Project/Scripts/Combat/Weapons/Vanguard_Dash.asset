@@ -15,25 +15,25 @@ MonoBehaviour:
   comboName: Vanguard-Dash
   attacks:
   - animationName: 
-    damage: 50
+    damage: 24
     knockbackForce: 10
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
+    hitStopDuration: 0.1
+    activeFrameStart: 6
+    activeFrameEnd: 14
     canCancelIntoDash: 0
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
-    hitboxShape: 0
-    hitboxOffset: {x: 0, y: 0}
-    hitboxSize: {x: 0, y: 0}
+    earliestCancelFrame: 20
+    hitboxShape: 2
+    hitboxOffset: {x: 0.8, y: 0.2}
+    hitboxSize: {x: 2, y: 1}
     providesMovement: 1
-    movementVector: {x: 15, y: 0}
-    movementDuration: 0.3
-    attackType: 0
+    movementVector: {x: 12, y: 0}
+    movementDuration: 0.18
+    attackType: 1
     clashMultiplier: 0
     resonanceGain: 0
-    resonanceCost: 40
+    resonanceCost: 15
     projectilePrefab: {fileID: 0}
     projectileSpeed: 0
     isCharged: 0

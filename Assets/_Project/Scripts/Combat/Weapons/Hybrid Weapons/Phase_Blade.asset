@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7737a70605563014f9df2f332df220a1, type: 3}
   m_Name: Phase_Blade
   m_EditorClassIdentifier: Assembly-CSharp::BEACON.Combat.HybridWeaponData
-  weaponName: 
+  weaponName: Phase_Blade
   archetype: 0
   icon: {fileID: 0}
   weaponPrefab: {fileID: 0}

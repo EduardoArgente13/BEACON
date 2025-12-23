@@ -15,53 +15,54 @@ MonoBehaviour:
   comboName: Void_Hammer
   attacks:
   - animationName: Hammer_Swing1
-    damage: 35
+    damage: 22
     knockbackForce: 10
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0.2
+    hitStopDuration: 0.08
     activeFrameStart: 10
-    activeFrameEnd: 20
+    activeFrameEnd: 18
     canCancelIntoDash: 0
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 24
     hitboxShape: 0
-    hitboxOffset: {x: 1, y: 0}
-    hitboxSize: {x: 3, y: 3}
-    providesMovement: 0
-    movementVector: {x: 0, y: 0}
-    movementDuration: 0
+    hitboxOffset: {x: 0.7, y: 0.2}
+    hitboxSize: {x: 2.2, y: 1.2}
+    providesMovement: 1
+    movementVector: {x: 1.5, y: 0}
+    movementDuration: 0.12
     attackType: 0
     clashMultiplier: 0
-    resonanceGain: 20
+    resonanceGain: 8
     resonanceCost: 0
     projectilePrefab: {fileID: 0}
     projectileSpeed: 0
     isCharged: 0
     minChargeTime: 0
   - animationName: Hammer_Swing2
-    damage: 55
-    knockbackForce: 10
+    damage: 32
+    knockbackForce: 12
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0.3
-    activeFrameStart: 15
-    activeFrameEnd: 28
+    hitStopDuration: 0.12
+    activeFrameStart: 18
+    activeFrameEnd: 30
     canCancelIntoDash: 0
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 34
     hitboxShape: 0
-    hitboxOffset: {x: 1, y: 0}
-    hitboxSize: {x: 4, y: 4}
-    providesMovement: 0
-    movementVector: {x: 0, y: 0}
-    movementDuration: 0
+    hitboxOffset: {x: 0.9, y: 0.1}
+    hitboxSize: {x: 2.6, y: 1.4}
+    providesMovement: 1
+    movementVector: {x: 2.5, y: 0}
+    movementDuration: 0.14
     attackType: 0
-    clashMultiplier: 0
-    resonanceGain: 30
+    clashMultiplier: 1.2
+    resonanceGain: 10
     resonanceCost: 0
     projectilePrefab: {fileID: 0}
     projectileSpeed: 0
     isCharged: 0
     minChargeTime: 0
-  timingWindows: []
+  timingWindows:
+  - 0.38
   allowDirectionalInput: 0
   resetOnAir: 0

@@ -15,15 +15,15 @@ MonoBehaviour:
   comboName: Phase_Shot
   attacks:
   - animationName: Spetial_RB
-    damage: 40
-    knockbackForce: 0
+    damage: 18
+    knockbackForce: 4
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
-    canCancelIntoDash: 0
+    hitStopDuration: 0.06
+    activeFrameStart: 4
+    activeFrameEnd: 12
+    canCancelIntoDash: 1
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 16
     hitboxShape: 0
     hitboxOffset: {x: 0, y: 0}
     hitboxSize: {x: 0, y: 0}
@@ -33,12 +33,12 @@ MonoBehaviour:
     attackType: 2
     clashMultiplier: 0
     resonanceGain: 0
-    resonanceCost: 20
+    resonanceCost: 15
     projectilePrefab: {fileID: 2865157013699809261, guid: c8e198250cb179e459de19b8429ee7cd, type: 3}
-    projectileSpeed: 18
+    projectileSpeed: 26
     isCharged: 0
     minChargeTime: 0
-    projectileCount: 0
+    projectileCount: 1
     spreadAngle: 0
   timingWindows: []
   allowDirectionalInput: 0

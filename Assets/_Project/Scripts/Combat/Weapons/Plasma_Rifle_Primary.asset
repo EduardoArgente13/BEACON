@@ -15,15 +15,15 @@ MonoBehaviour:
   comboName: Plasma_Rifle_Primary
   attacks:
   - animationName: Plasma_Rifle
-    damage: 8
-    knockbackForce: 0
+    damage: 10
+    knockbackForce: 3
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
-    canCancelIntoDash: 0
+    hitStopDuration: 0.04
+    activeFrameStart: 4
+    activeFrameEnd: 12
+    canCancelIntoDash: 1
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 14
     hitboxShape: 0
     hitboxOffset: {x: 0, y: 0}
     hitboxSize: {x: 0, y: 0}
@@ -32,15 +32,14 @@ MonoBehaviour:
     movementDuration: 0
     attackType: 2
     clashMultiplier: 0
-    resonanceGain: 1
+    resonanceGain: 4
     resonanceCost: 0
     projectilePrefab: {fileID: 2836289628849717845, guid: c522a55741e161a44bc719eada7ade0a, type: 3}
-    projectileSpeed: 30
+    projectileSpeed: 32
     isCharged: 0
     minChargeTime: 0
-    projectileCount: 0
-    spreadAngle: 0
-  timingWindows:
-  - 0.15
-  allowDirectionalInput: 0
-  resetOnAir: 0
+    projectileCount: 3
+    spreadAngle: 6
+  timingWindows: []
+  allowDirectionalInput: 1
+  resetOnAir: 1

@@ -15,25 +15,25 @@ MonoBehaviour:
   comboName: Void_Slam
   attacks:
   - animationName: Hammer_Slam
-    damage: 80
-    knockbackForce: 0
+    damage: 45
+    knockbackForce: 14
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
+    hitStopDuration: 0.14
+    activeFrameStart: 20
+    activeFrameEnd: 32
     canCancelIntoDash: 0
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 40
     hitboxShape: 1
     hitboxOffset: {x: 0, y: 0}
-    hitboxSize: {x: 5, y: 0}
-    providesMovement: 1
-    movementVector: {x: 0, y: -10}
+    hitboxSize: {x: 2.5, y: 0}
+    providesMovement: 0
+    movementVector: {x: 0, y: 0}
     movementDuration: 0
     attackType: 1
     clashMultiplier: 0
     resonanceGain: 0
-    resonanceCost: 40
+    resonanceCost: 25
     projectilePrefab: {fileID: 0}
     projectileSpeed: 0
     isCharged: 0

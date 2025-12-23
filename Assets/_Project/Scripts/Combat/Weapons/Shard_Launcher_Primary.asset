@@ -15,31 +15,31 @@ MonoBehaviour:
   comboName: Shard_Launcher
   attacks:
   - animationName: 
-    damage: 8
-    knockbackForce: 0
+    damage: 9
+    knockbackForce: 4
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
-    canCancelIntoDash: 0
+    hitStopDuration: 0.05
+    activeFrameStart: 6
+    activeFrameEnd: 12
+    canCancelIntoDash: 1
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 16
     hitboxShape: 0
     hitboxOffset: {x: 0, y: 0}
-    hitboxSize: {x: 1, y: 1}
+    hitboxSize: {x: 0, y: 0}
     providesMovement: 0
     movementVector: {x: 0, y: 0}
     movementDuration: 0
     attackType: 2
     clashMultiplier: 0
-    resonanceGain: 0
+    resonanceGain: 6
     resonanceCost: 0
     projectilePrefab: {fileID: 8255633372127474038, guid: 5a4a547689f7da140939348444b2dff7, type: 3}
-    projectileSpeed: 15
+    projectileSpeed: 24
     isCharged: 0
     minChargeTime: 0
-    projectileCount: 3
-    spreadAngle: 35
+    projectileCount: 5
+    spreadAngle: 30
   timingWindows: []
-  allowDirectionalInput: 0
-  resetOnAir: 0
+  allowDirectionalInput: 1
+  resetOnAir: 1

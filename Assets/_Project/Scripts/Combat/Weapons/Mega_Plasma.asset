@@ -15,15 +15,15 @@ MonoBehaviour:
   comboName: Mega_Plasma
   attacks:
   - animationName: 
-    damage: 120
-    knockbackForce: 0
+    damage: 35
+    knockbackForce: 8
     knockbackDirection: {x: 0, y: 0}
-    hitStopDuration: 0
-    activeFrameStart: 0
-    activeFrameEnd: 0
+    hitStopDuration: 0.1
+    activeFrameStart: 6
+    activeFrameEnd: 16
     canCancelIntoDash: 0
     canCancelIntoJump: 0
-    earliestCancelFrame: 0
+    earliestCancelFrame: 24
     hitboxShape: 0
     hitboxOffset: {x: 0, y: 0}
     hitboxSize: {x: 0, y: 0}
@@ -33,12 +33,12 @@ MonoBehaviour:
     attackType: 3
     clashMultiplier: 0
     resonanceGain: 0
-    resonanceCost: 50
+    resonanceCost: 20
     projectilePrefab: {fileID: 41029959489276955, guid: f557613803737f648b665ef2a24dc9d5, type: 3}
-    projectileSpeed: 20
+    projectileSpeed: 38
     isCharged: 1
-    minChargeTime: 0.8
-    projectileCount: 0
+    minChargeTime: 0.6
+    projectileCount: 1
     spreadAngle: 0
   timingWindows: []
   allowDirectionalInput: 0
